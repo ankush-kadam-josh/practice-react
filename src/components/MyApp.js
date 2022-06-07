@@ -41,7 +41,7 @@ const MyApp = () => {
 
   return (
     <div>
-      <h3>My App</h3>
+      <h3>My App for redux saga demo</h3>
       <div>
         <h5>Total:{counter}</h5>
         <div>
