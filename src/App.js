@@ -2,6 +2,7 @@ import "./App.css";
 import FunctionTestingDemo from "./components/FunctionTestingDemo";
 import MyApp from "./components/MyApp";
 import TodoList from "./components/TodoList";
+import UserList from "./components/User/UserList";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       {/* <hr></hr> */}
 
       {/* functional testing */}
-      <FunctionTestingDemo />
+      {/* <FunctionTestingDemo /> */}
+
+      {/* Redux saga another demo with test cases covered */}
+      <UserList />
     </div>
   );
 }
