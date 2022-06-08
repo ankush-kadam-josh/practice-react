@@ -23,11 +23,13 @@ const UserList = () => {
 
   const showTableHeadings = React.useCallback(() => {
     return (
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Gender</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
     );
   }, []);
 
@@ -35,7 +37,7 @@ const UserList = () => {
     return (
       <table>
         {showTableHeadings()}
-        {userList.map((user) => showUser(user))}
+        <tbody>{userList.map((user) => showUser(user))}</tbody>
       </table>
     );
   }, [userList]);

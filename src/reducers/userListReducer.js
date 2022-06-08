@@ -1,6 +1,6 @@
 import { fetchUserListActions } from "../actions/userActions";
 
-const initialState = {
+export const initialState = {
   isFetchUserLoading: false,
   userList: [],
 };
