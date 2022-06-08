@@ -16,23 +16,23 @@ const MyApp = () => {
 
   const handleIncrement = React.useCallback(() => {
     dispatch(incrementCounter());
-  }, []);
+  }, [dispatch]);
 
   const handleDecrement = React.useCallback(() => {
     dispatch(decrementCounter());
-  }, []);
+  }, [dispatch]);
 
   const handleReset = React.useCallback(() => {
     dispatch(resetCounter());
-  }, []);
+  }, [dispatch]);
 
   const handleIncrementBy = React.useCallback(() => {
     dispatch(incrementByCounter(changeByValue));
-  }, [changeByValue]);
+  }, [dispatch, changeByValue]);
 
   const handleDecrementBy = React.useCallback(() => {
     dispatch(decrementByCounter(changeByValue));
-  }, [changeByValue]);
+  }, [dispatch, changeByValue]);
 
   const handleValueChange = React.useCallback((e) => {
     e.preventDefault();
