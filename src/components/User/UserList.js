@@ -11,12 +11,13 @@ const UserList = () => {
     dispatch(fetchUserList());
   }, [dispatch]);
 
-  const showUser = React.useCallback((user) => {
+  const showUser = React.useCallback((user, index) => {
     return (
       <tr key={user.id}>
+        <td style={{ textAlign: "center" }}>{index + 1}</td>
         <td>{user.name}</td>
         <td>{user.email}</td>
-        <td>{user.gender}</td>
+        <td style={{ textAlign: "center" }}>{user.gender}</td>
       </tr>
     );
   }, []);
@@ -25,6 +26,7 @@ const UserList = () => {
     return (
       <thead>
         <tr>
+          <th>Sr No.</th>
           <th>Name</th>
           <th>Email</th>
           <th>Gender</th>
@@ -37,7 +39,7 @@ const UserList = () => {
     return (
       <table>
         {showTableHeadings()}
-        <tbody>{userList.map((user) => showUser(user))}</tbody>
+        <tbody>{userList.map((user, index) => showUser(user, index))}</tbody>
       </table>
     );
   }, [userList]);
