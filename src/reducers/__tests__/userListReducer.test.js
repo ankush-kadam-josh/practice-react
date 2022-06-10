@@ -5,6 +5,7 @@ import {
   fetchUserListSuccess,
 } from "../../action-creators/userActionCreator";
 import { userListReducer, initialState } from "../userListReducer";
+import FetchUserListMock from "./FetchUserListSuccess.mock.json";
 
 describe("User list reducer tests", () => {
   //store initial state before running each test case
@@ -19,25 +20,7 @@ describe("User list reducer tests", () => {
   });
 
   it("On fetch user list success", () => {
-    const payload = {
-      error: false,
-      response: [
-        {
-          email: "vinay_ms_nambeesan@herman.io",
-          gender: "male",
-          id: 2,
-          name: "Ms. Vinay Nambeesan",
-          status: "active",
-        },
-        {
-          email: "anil_joshi@jerde.info",
-          gender: "male",
-          id: 2269,
-          name: "Anil Joshi",
-          status: "active",
-        },
-      ],
-    };
+    const payload = FetchUserListMock;
     const updatedState = {
       ...state,
       userList: payload.response,
