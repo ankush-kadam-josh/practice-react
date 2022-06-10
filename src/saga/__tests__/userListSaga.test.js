@@ -19,4 +19,15 @@ describe("user list saga tests", () => {
   it("It should be done on next iteration", () => {
     expect(userListSagaToTest.next().done).toBeTruthy();
   });
+
+  it("FetchUserList generator function should have following payload", () => {
+    const fetchUserListPayload =
+      fetchUserList().next().value.payload.args[0].payload;
+    expect(fetchUserListPayload).toEqual({
+      body: null,
+      reqPath: "https://gorest.co.in/public/v2/users",
+      successAction: "FETCH_USER_LIST_SUCCESS",
+      failureAction: "FETCH_USER_LIST_FAILED",
+    });
+  });
 });
