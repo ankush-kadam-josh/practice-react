@@ -1,4 +1,3 @@
-import * as React from "react";
 import { fetchUserListActions } from "../../actions/userActions";
 import { fetchUserList, fetchUserListFailed } from "../userActionCreator";
 
