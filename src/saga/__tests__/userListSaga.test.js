@@ -1,5 +1,6 @@
 import { takeEvery } from "redux-saga/effects";
 import { fetchUserListActions } from "../../actions/userActions";
+import { fetchUserListFailed } from "../../action-creators/userActionCreator";
 import { fetchUserList, userListSaga } from "../userListSaga";
 
 describe("user list saga tests", () => {
@@ -30,4 +31,19 @@ describe("user list saga tests", () => {
       failureAction: "FETCH_USER_LIST_FAILED",
     });
   });
+
+  //TODO: testing catch block of generator function
+  // it("FetchUserList generator function should handle error", () => {
+  //   let error = {
+  //     message: "Failed to fetch",
+  //     stack: "",
+  //   };
+
+  //   expect(fetchUserList().next().value.throw(error).value).toEqual(
+  //     put({
+  //       type: fetchUserListActions.failure,
+  //       error,
+  //     })
+  //   );
+  // });
 });
