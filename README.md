@@ -21,13 +21,13 @@ PROJECT DETAILS
 We can refer this project for:
 
 -   Redux saga
-    => Counter example
-    => Api calling (userList) example using public api's
+    -   Counter example
+    -   Api calling (userList) example using public api's
 -   Test cases using jest which coveres:
-    => creating test report
-    => functional test cases
-    => redux saga test cases
-    => reducers test cases
-    => action creators test cases
+    -   creating test report
+    -   functional test cases
+    -   redux saga test cases
+    -   reducers test cases
+    -   action creators test cases
 
 ---
