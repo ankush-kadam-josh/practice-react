@@ -1,0 +1,33 @@
+{
+  "error": false,
+  "response": [
+    {
+      "email": "vinay_ms_nambeesan@herman.io",
+      "gender": "male",
+      "id": 1,
+      "name": "Ms. Vinay Nambeesan",
+      "status": "active"
+    },
+    {
+      "email": "akshay.namde@abcd.com",
+      "gender": "male",
+      "id": 2,
+      "name": "Akshay Namde",
+      "status": "active"
+    },
+    {
+      "email": "raju.shreewastav@gmail.com",
+      "gender": "male",
+      "id": 3,
+      "name": "Raju Shreewastav",
+      "status": "active"
+    },
+    {
+      "email": "anil_joshi@jerde.info",
+      "gender": "male",
+      "id": 4,
+      "name": "Anil Joshi",
+      "status": "active"
+    }
+  ]
+}

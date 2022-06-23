@@ -1,6 +1,6 @@
 import { numberActions } from "../actions/numberActions";
 
-const initialState = {
+export const initialState = {
   counter: 0,
 };
 
