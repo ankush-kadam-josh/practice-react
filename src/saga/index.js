@@ -2,9 +2,10 @@ import { all } from "redux-saga/effects";
 
 //import all sagas
 import { numberSaga } from "./numberSaga";
-
-const allSagas = [
+import { userListSaga } from "./userListSaga";
+export const allSagas = [
   numberSaga(),
+  userListSaga(),
   //call all sagas here
 ];
 

@@ -46,3 +46,25 @@ button:hover {
   color: black;
   cursor: pointer;
 }
+
+/*
+* Global Table Styles 
+*/
+table {
+  margin: 16px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px 8px;
+}
+td {
+  text-align: left;
+}
